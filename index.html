@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Privacy Policy | PartsBaba.ai</title>
+
+  <meta
+    name="description"
+    content="Privacy Policy for PartsBaba.ai explaining how we collect, use, share and protect information when you use our sourcing and RFQ platform."
+  />
+
+  <style>
+    :root {
+      --primary: #ff6b00;
+      --primary-dark: #e85f00;
+      --dark: #111827;
+      --text: #374151;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --orange-light: #fff7ed;
+      --orange-border: #fed7aa;
+      --green-light: #f0fdf4;
+      --green-border: #bbf7d0;
+      --blue-light: #eff6ff;
+      --blue-border: #bfdbfe;
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-container {
+      max-width: 1180px;
+      margin: auto;
+      padding: 14px 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      font-size: 14px;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 10px 18px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(255, 107, 0, 0.12),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #fff7ed 0%,
+          #ffffff 55%
+        );
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 75px 24px 70px;
+    }
+
+    .breadcrumb {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 13px;
+
+      border-radius: 999px;
+
+      background: var(--orange-light);
+      border: 1px solid var(--orange-border);
+
+      color: #c2410c;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+
+      font-size: clamp(38px, 5vw, 60px);
+
+      line-height: 1.1;
+
+      letter-spacing: -1.8px;
+
+      color: var(--dark);
+
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 780px;
+
+      font-size: 18px;
+
+      color: #596273;
+
+      line-height: 1.7;
+    }
+
+    .updated {
+      margin-top: 26px;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 13px;
+
+      color: var(--muted);
+
+      background: #fff;
+
+      border: 1px solid var(--border);
+
+      padding: 8px 13px;
+
+      border-radius: 999px;
+    }
+
+    /* =========================
+       PAGE
+    ========================== */
+
+    .page-wrapper {
+      max-width: 1180px;
+      margin: auto;
+
+      padding: 60px 24px 90px;
+
+      display: grid;
+
+      grid-template-columns:
+        250px
+        minmax(0, 1fr);
+
+      gap: 60px;
+    }
+
+    /* =========================
+       SIDEBAR
+    ========================== */
+
+    .sidebar {
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+
+    .sidebar-title {
+      font-size: 13px;
+      font-weight: 800;
+
+      color: var(--dark);
+
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+
+      margin-bottom: 16px;
+    }
+
+    .toc {
+      border-left: 2px solid #f3f4f6;
+    }
+
+    .toc a {
+      display: block;
+
+      padding: 7px 0 7px 17px;
+
+      margin-left: -2px;
+
+      border-left: 2px solid transparent;
+
+      font-size: 13px;
+
+      color: #6b7280;
+
+      line-height: 1.4;
+
+      transition: all 0.2s ease;
+    }
+
+    .toc a:hover {
+      color: var(--primary);
+      border-left-color: var(--primary);
+    }
+
+    /* =========================
+       CONTENT
+    ========================== */
+
+    .content {
+      min-width: 0;
+    }
+
+    .intro-card {
+      padding: 28px 30px;
+
+      background: var(--orange-light);
+
+      border: 1px solid var(--orange-border);
+
+      border-radius: var(--radius);
+
+      margin-bottom: 42px;
+    }
+
+    .intro-card h2 {
+      font-size: 21px;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .intro-card p {
+      color: #57534e;
+    }
+
+    .section {
+      padding-bottom: 38px;
+      margin-bottom: 38px;
+
+      border-bottom: 1px solid var(--border);
+
+      scroll-margin-top: 100px;
+    }
+
+    .section:last-child {
+      border-bottom: 0;
+    }
+
+    .section-number {
+      display: inline-block;
+
+      font-size: 12px;
+      font-weight: 800;
+
+      color: var(--primary);
+
+      margin-bottom: 7px;
+
+      letter-spacing: 0.5px;
+    }
+
+    .section h2 {
+      color: var(--dark);
+
+      font-size: 25px;
+
+      line-height: 1.3;
+
+      margin-bottom: 14px;
+
+      letter-spacing: -0.3px;
+    }
+
+    .section h3 {
+      color: var(--dark);
+
+      font-size: 17px;
+
+      margin: 23px 0 8px;
+    }
+
+    .section p {
+      margin-bottom: 13px;
+      color: #4b5563;
+    }
+
+    .section ul {
+      margin: 12px 0 15px 21px;
+      color: #4b5563;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #1f2937;
+    }
+
+    /* =========================
+       SUMMARY CARDS
+    ========================== */
+
+    .privacy-summary {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 14px;
+
+      margin: 25px 0 42px;
+    }
+
+    .summary-card {
+      padding: 20px;
+
+      border: 1px solid var(--border);
+
+      border-radius: 14px;
+
+      background: #fff;
+
+      box-shadow:
+        0 5px 18px rgba(17, 24, 39, 0.04);
+    }
+
+    .summary-icon {
+      width: 40px;
+      height: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+
+      background: var(--orange-light);
+
+      margin-bottom: 13px;
+
+      font-size: 19px;
+    }
+
+    .summary-card h4 {
+      color: var(--dark);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .summary-card p {
+      font-size: 13px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* =========================
+       INFO BOX
+    ========================== */
+
+    .info-box {
+      padding: 21px 23px;
+
+      border-radius: 14px;
+
+      margin: 20px 0;
+
+      border: 1px solid;
+    }
+
+    .info-box.green {
+      background: var(--green-light);
+      border-color: var(--green-border);
+    }
+
+    .info-box.blue {
+      background: var(--blue-light);
+      border-color: var(--blue-border);
+    }
+
+    .info-box.orange {
+      background: var(--orange-light);
+      border-color: var(--orange-border);
+    }
+
+    .info-box strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .info-box p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-card {
+      background: #111827;
+
+      color: #fff;
+
+      border-radius: 20px;
+
+      padding: 34px;
+
+      margin-top: 10px;
+    }
+
+    .contact-card h2 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card > p {
+      color: #cbd5e1;
+      margin-bottom: 24px;
+    }
+
+    .contact-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.4fr 1fr;
+
+      gap: 20px;
+    }
+
+    .contact-item {
+      padding: 17px;
+
+      border: 1px solid rgba(255,255,255,0.1);
+
+      background: rgba(255,255,255,0.04);
+
+      border-radius: 12px;
+    }
+
+    .contact-item small {
+      display: block;
+
+      color: #94a3b8;
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 0.7px;
+
+      margin-bottom: 5px;
+    }
+
+    .contact-item span,
+    .contact-item a {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .contact-item a:hover {
+      color: #fdba74;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #0b1120;
+      color: #cbd5e1;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+
+      padding: 50px 24px 30px;
+    }
+
+    .footer-top {
+      display: grid;
+
+      grid-template-columns:
+        1.5fr 1fr 1fr;
+
+      gap: 50px;
+
+      padding-bottom: 40px;
+
+      border-bottom:
+        1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-logo {
+      width: 145px;
+
+      margin-bottom: 17px;
+
+      background: #fff;
+
+      padding: 7px;
+
+      border-radius: 8px;
+    }
+
+    .footer-brand p {
+      max-width: 360px;
+
+      font-size: 14px;
+
+      color: #94a3b8;
+    }
+
+    .footer-column h4 {
+      color: #fff;
+
+      font-size: 14px;
+
+      margin-bottom: 15px;
+    }
+
+    .footer-column a {
+      display: block;
+
+      font-size: 13px;
+
+      color: #94a3b8;
+
+      margin-bottom: 9px;
+    }
+
+    .footer-column a:hover {
+      color: #fb923c;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      flex-wrap: wrap;
+
+      font-size: 12px;
+
+      color: #64748b;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .page-wrapper {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .toc {
+        display: grid;
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+        border-left: 0;
+
+        border-top:
+          2px solid #f3f4f6;
+      }
+
+      .toc a {
+        border-left: 0;
+
+        border-bottom:
+          1px solid #f3f4f6;
+
+        padding-left: 0;
+        padding-right: 10px;
+      }
+
+      .privacy-summary {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+      .footer-top {
+        grid-template-columns:
+          1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .nav-container {
+        padding: 12px 17px;
+      }
+
+      .logo img {
+        width: 130px;
+      }
+
+      .hero-inner {
+        padding: 55px 18px 50px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .page-wrapper {
+        padding: 42px 18px 65px;
+      }
+
+      .toc {
+        grid-template-columns: 1fr;
+      }
+
+      .privacy-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 25px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <div class="nav-container">
+
+      <a
+        href="https://partsbaba.ai/"
+        class="logo"
+      >
+        <img
+          src="https://partsbaba.ai/static/media/PartsBABA_logo.c956a49373c9e9868bf7.png"
+          alt="PartsBaba"
+        />
+      </a>
+
+      <nav class="nav-links">
+
+        <a href="https://partsbaba.ai/">
+          AI Search
+        </a>
+
+        <a href="https://partsbaba.ai/categories">
+          Categories
+        </a>
+
+        <a href="https://partsbaba.ai/#insights">
+          Insights
+        </a>
+
+        <a href="https://partsbaba.ai/#about">
+          About Us
+        </a>
+
+        <a href="https://partsbaba.ai/#contact">
+          Contact
+        </a>
+
+        <a
+          href="https://partsbaba.ai/"
+          class="nav-cta"
+        >
+          Request a Quote
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="breadcrumb">
+
+        <a href="https://partsbaba.ai/">
+          Home
+        </a>
+
+        &nbsp;/&nbsp;
+
+        Legal
+
+        &nbsp;/&nbsp;
+
+        Privacy Policy
+
+      </div>
+
+
+      <div class="hero-label">
+        ✦ Your Privacy Matters
+      </div>
+
+
+      <h1>
+        Privacy <span>Policy</span>
+      </h1>
+
+
+      <p>
+        We believe your information should be handled responsibly and
+        transparently. This Privacy Policy explains what information we
+        collect, why we use it, how we share it and how we work to protect it.
+      </p>
+
+
+      <div class="updated">
+        ● Last Updated: September 2026
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PAGE CONTENT
+  ========================== -->
+
+  <div class="page-wrapper">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-title">
+        On this page
+      </div>
+
+      <nav class="toc">
+
+        <a href="#welcome">
+          Welcome
+        </a>
+
+        <a href="#collect">
+          Information We Collect
+        </a>
+
+        <a href="#usage">
+          Website Usage Data
+        </a>
+
+        <a href="#rfq">
+          RFQ Information
+        </a>
+
+        <a href="#third-party">
+          Information From Third Parties
+        </a>
+
+        <a href="#how-use">
+          How We Use Information
+        </a>
+
+        <a href="#cookies">
+          Cookies
+        </a>
+
+        <a href="#sharing">
+          Sharing Information
+        </a>
+
+        <a href="#categories">
+          Information Categories
+        </a>
+
+        <a href="#security">
+          Security
+        </a>
+
+        <a href="#retention">
+          Retention
+        </a>
+
+        <a href="#rights">
+          Your Rights
+        </a>
+
+        <a href="#children">
+          Children's Privacy
+        </a>
+
+        <a href="#third-party-sites">
+          Third-Party Websites
+        </a>
+
+        <a href="#international">
+          International Processing
+        </a>
+
+        <a href="#business">
+          Business Transfers
+        </a>
+
+        <a href="#changes">
+          Policy Updates
+        </a>
+
+        <a href="#complaints">
+          Privacy Questions
+        </a>
+
+        <a href="#contact">
+          Contact Us
+        </a>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="content">
+
+
+      <!-- INTRO -->
+
+      <div class="intro-card">
+
+        <h2>
+          Your Privacy Matters to Us
+        </h2>
+
+        <p>
+          PartsBaba.ai is built around helping customers source the parts
+          they need. To make that possible, we sometimes need information
+          from you. We aim to collect information that is relevant to our
+          services, use it responsibly and be transparent about how it is
+          handled.
+        </p>
+
+      </div>
+
+
+      <!-- SUMMARY -->
+
+      <div class="privacy-summary">
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            🔎
+          </div>
+
+          <h4>
+            What We Collect
+          </h4>
+
+          <p>
+            Information that helps us provide RFQ, sourcing, account and
+            support services.
+          </p>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            ⚙️
+          </div>
+
+          <h4>
+            Why We Use It
+          </h4>
+
+          <p>
+            To process requirements, communicate with you, arrange services
+            and improve PartsBaba.ai.
+          </p>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <div class="summary-icon">
+            🛡️
+          </div>
+
+          <h4>
+            How We Protect It
+          </h4>
+
+          <p>
+            We use reasonable technical and organisational measures to
+            protect the information we handle.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- 01 -->
+
+      <section
+        class="section"
+        id="welcome"
+      >
+
+        <span class="section-number">
+          01
+        </span>
+
+        <h2>
+          Welcome to PartsBaba.ai
+        </h2>
+
+        <p>
+          At PartsBaba.ai, we believe sourcing should be simple, transparent
+          and reliable. We also believe that your personal information should
+          be handled responsibly.
+        </p>
+
+        <p>
+          This Privacy Policy explains what information we may collect when
+          you use PartsBaba.ai, how we use it, how we may share it and the
+          choices available to you.
+        </p>
+
+        <p>
+          By accessing or using PartsBaba.ai, you acknowledge the practices
+          described in this Privacy Policy.
+        </p>
+
+      </section>
+
+
+      <!-- 02 -->
+
+      <section
+        class="section"
+        id="collect"
+      >
+
+        <span class="section-number">
+          02
+        </span>
+
+        <h2>
+          Information We May Collect
+        </h2>
+
+        <p>
+          Depending on how you use PartsBaba.ai, we may collect information
+          that helps us provide our sourcing, RFQ and support services.
+        </p>
+
+        <h3>
+          Information You Provide
+        </h3>
+
+        <p>
+          When you submit an RFQ, create an account, contact us or otherwise
+          communicate with our team, you may provide information such as:
+        </p>
+
+        <ul>
+          <li>Name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Company or organisation name</li>
+          <li>Billing or shipping information</li>
+          <li>Product and part requirements</li>
+          <li>Quantity requirements</li>
+          <li>Delivery preferences</li>
+          <li>Information included in your RFQ</li>
+          <li>Messages or other information you choose to share with us</li>
+          <li>Account and login information, where applicable</li>
+        </ul>
+
+        <div class="info-box green">
+
+          <strong>
+            We focus on relevant information.
+          </strong>
+
+          <p>
+            We aim to request information that is reasonably relevant to
+            providing our services and communicating with you.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 03 -->
+
+      <section
+        class="section"
+        id="usage"
+      >
+
+        <span class="section-number">
+          03
+        </span>
+
+        <h2>
+          Information Collected Through Website Usage
+        </h2>
+
+        <p>
+          When you visit or interact with PartsBaba.ai, certain technical
+          information may be collected automatically.
+        </p>
+
+        <p>
+          This may include:
+        </p>
+
+        <ul>
+          <li>IP address</li>
+          <li>Browser type</li>
+          <li>Device type</li>
+          <li>Operating system</li>
+          <li>Network connection information</li>
+          <li>Pages visited</li>
+          <li>Website interaction information</li>
+          <li>Approximate session or usage information</li>
+          <li>Date and time of access</li>
+          <li>Technical information required to operate and secure the website</li>
+        </ul>
+
+        <p>
+          This information helps us operate the website, understand how it is
+          being used, improve performance and support website security.
+        </p>
+
+      </section>
+
+
+      <!-- 04 -->
+
+      <section
+        class="section"
+        id="rfq"
+      >
+
+        <span class="section-number">
+          04
+        </span>
+
+        <h2>
+          Information From Your RFQ
+        </h2>
+
+        <p>
+          When you submit a Request for Quote, the information you provide may
+          be used by PartsBaba to understand and process your requirement.
+        </p>
+
+        <p>
+          We may use RFQ information to:
+        </p>
+
+        <ul>
+          <li>Identify suitable products</li>
+          <li>Contact relevant suppliers</li>
+          <li>Check product availability</li>
+          <li>Request pricing</li>
+          <li>Compare sourcing options</li>
+          <li>Prepare a quotation</li>
+          <li>Communicate expected lead times</li>
+          <li>Arrange procurement and delivery</li>
+          <li>Contact you regarding your requirement</li>
+        </ul>
+
+        <p>
+          Some RFQs may contain technical or product-specific information.
+          We use this information to help source the requested products and
+          services.
+        </p>
+
+      </section>
+
+
+      <!-- 05 -->
+
+      <section
+        class="section"
+        id="third-party"
+      >
+
+        <span class="section-number">
+          05
+        </span>
+
+        <h2>
+          Information We May Receive From Third Parties
+        </h2>
+
+        <p>
+          We may receive certain information from third parties that support
+          PartsBaba.ai or help us provide our services.
+        </p>
+
+        <p>
+          These may include:
+        </p>
+
+        <ul>
+          <li>Technology and website service providers</li>
+          <li>Communication service providers</li>
+          <li>Analytics and measurement providers</li>
+          <li>Payment or transaction service providers, where applicable</li>
+          <li>Logistics or fulfilment partners</li>
+          <li>Other service providers working on our behalf</li>
+        </ul>
+
+        <p>
+          We may also receive information through online technologies such as
+          cookies, pixels, web beacons, software libraries or similar
+          technologies where these are used on our services.
+        </p>
+
+        <p>
+          Information received from third parties is handled in accordance
+          with this Privacy Policy and applicable requirements.
+        </p>
+
+      </section>
+
+
+      <!-- 06 -->
+
+      <section
+        class="section"
+        id="how-use"
+      >
+
+        <span class="section-number">
+          06
+        </span>
+
+        <h2>
+          How We Use Your Information
+        </h2>
+
+        <p>
+          We may use the information we collect to:
+        </p>
+
+        <ul>
+          <li>Process and respond to RFQs</li>
+          <li>Prepare quotations</li>
+          <li>Communicate with customers</li>
+          <li>Source products through our supplier network</li>
+          <li>Process and manage orders</li>
+          <li>Arrange shipping and delivery</li>
+          <li>Provide customer support</li>
+          <li>Maintain customer accounts</li>
+          <li>Improve PartsBaba.ai and its services</li>
+          <li>Understand website usage and user interaction</li>
+          <li>Maintain website security</li>
+          <li>Detect, investigate and address possible fraudulent, illegal or malicious activity</li>
+          <li>Meet applicable legal and regulatory requirements</li>
+          <li>Communicate important service-related updates</li>
+        </ul>
+
+        <p>
+          We aim to use information for purposes that are relevant to your
+          interaction with PartsBaba.
+        </p>
+
+      </section>
+
+
+      <!-- 07 -->
+
+      <section
+        class="section"
+        id="cookies"
+      >
+
+        <span class="section-number">
+          07
+        </span>
+
+        <h2>
+          Cookies & Similar Technologies
+        </h2>
+
+        <p>
+          PartsBaba.ai may use cookies or similar technologies to help the
+          website function properly and improve your experience.
+        </p>
+
+        <p>
+          Cookies and similar technologies may help us:
+        </p>
+
+        <ul>
+          <li>Keep the website functional</li>
+          <li>Remember certain preferences</li>
+          <li>Understand website usage</li>
+          <li>Improve website performance</li>
+          <li>Measure engagement</li>
+          <li>Support website security</li>
+          <li>Understand interactions with communications or advertisements, where applicable</li>
+        </ul>
+
+        <p>
+          You may be able to manage or restrict cookies through your browser
+          settings. Some website functionality may be affected if certain
+          cookies are disabled or restricted.
+        </p>
+
+      </section>
+
+
+      <!-- 08 -->
+
+      <section
+        class="section"
+        id="sharing"
+      >
+
+        <span class="section-number">
+          08
+        </span>
+
+        <h2>
+          How We Share Information
+        </h2>
+
+        <p>
+          PartsBaba may share relevant information with trusted third parties
+          when this is necessary to provide requested services, operate the
+          platform, fulfil an order or meet applicable requirements.
+        </p>
+
+        <h3>
+          Suppliers & Sourcing Partners
+        </h3>
+
+        <p>
+          When required to source a product, relevant RFQ information may be
+          shared with suppliers or sourcing partners so they can help us check
+          availability, pricing and product details.
+        </p>
+
+        <h3>
+          Logistics & Delivery Partners
+        </h3>
+
+        <p>
+          Where required to fulfil an order, relevant delivery information
+          may be shared with logistics, shipping or fulfilment partners.
+        </p>
+
+        <h3>
+          Technology & Service Providers
+        </h3>
+
+        <p>
+          We may work with providers that support website hosting, IT
+          management, communications, analytics, customer support, cloud
+          storage and other business functions.
+        </p>
+
+        <h3>
+          Business & Marketing Partners
+        </h3>
+
+        <p>
+          Where applicable and permitted, we may work with business or
+          marketing partners to provide services, communicate relevant offers
+          or improve the experience of our users.
+        </p>
+
+        <h3>
+          Legal & Regulatory Requirements
+        </h3>
+
+        <p>
+          Information may be disclosed where required by applicable law,
+          regulation, legal process or a valid governmental request, or where
+          reasonably necessary to protect the rights and security of
+          PartsBaba, our users or others.
+        </p>
+
+        <div class="info-box blue">
+
+          <strong>
+            Our approach to sharing information
+          </strong>
+
+          <p>
+            We aim to share information only where it is relevant to providing
+            our services, operating the platform, fulfilling your request or
+            meeting applicable requirements.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 09 -->
+
+      <section
+        class="section"
+        id="categories"
+      >
+
+        <span class="section-number">
+          09
+        </span>
+
+        <h2>
+          Categories of Information We May Handle
+        </h2>
+
+        <p>
+          Depending on how you interact with PartsBaba.ai, the information we
+          handle may fall into categories such as:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Identifiers:</strong>
+            such as name, email address, phone number and account information.
+          </li>
+
+          <li>
+            <strong>Commercial information:</strong>
+            such as RFQ details, product requirements, quotations, order
+            information and customer support information.
+          </li>
+
+          <li>
+            <strong>Internet or network activity:</strong>
+            such as IP address, browser information, device information and
+            website interaction data.
+          </li>
+
+          <li>
+            <strong>Approximate location information:</strong>
+            where location information may be derived from technical data
+            such as an IP address.
+          </li>
+
+          <li>
+            <strong>Communication information:</strong>
+            such as messages, enquiries and support communications you choose
+            to send to us.
+          </li>
+        </ul>
+
+        <p>
+          We do not seek to collect sensitive personal information unless it is
+          necessary, permitted and appropriately handled under applicable law.
+        </p>
+
+      </section>
+
+
+      <!-- 10 -->
+
+      <section
+        class="section"
+        id="security"
+      >
+
+        <span class="section-number">
+          10
+        </span>
+
+        <h2>
+          How We Protect Your Information
+        </h2>
+
+        <p>
+          We take reasonable steps to protect the information we handle from
+          unauthorised access, misuse, alteration or disclosure.
+        </p>
+
+        <p>
+          Our security practices may include appropriate technical and
+          organisational measures designed to protect information used in
+          connection with PartsBaba.ai.
+        </p>
+
+        <div class="info-box green">
+
+          <strong>
+            Security is an ongoing process.
+          </strong>
+
+          <p>
+            We continuously aim to maintain appropriate safeguards as our
+            platform, technology and services evolve.
+          </p>
+
+        </div>
+
+        <p>
+          No website, online service or method of transmitting information
+          over the internet can be guaranteed to be completely secure.
+        </p>
+
+        <p>
+          We recommend avoiding insecure channels when communicating
+          sensitive or confidential information.
+        </p>
+
+      </section>
+
+
+      <!-- 11 -->
+
+      <section
+        class="section"
+        id="retention"
+      >
+
+        <span class="section-number">
+          11
+        </span>
+
+        <h2>
+          How Long We Keep Information
+        </h2>
+
+        <p>
+          We retain information for as long as it is reasonably necessary for
+          the purpose for which it was collected.
+        </p>
+
+        <p>
+          Depending on the circumstances, information may be retained to:
+        </p>
+
+        <ul>
+          <li>Manage customer relationships</li>
+          <li>Maintain RFQ and order records</li>
+          <li>Provide support</li>
+          <li>Complete accounting and business records</li>
+          <li>Meet legal or regulatory obligations</li>
+          <li>Resolve disputes</li>
+          <li>Enforce applicable agreements and policies</li>
+          <li>Protect the rights and security of PartsBaba and its users</li>
+        </ul>
+
+        <p>
+          When information is no longer required, we may delete it or
+          otherwise handle it in accordance with applicable requirements.
+        </p>
+
+      </section>
+
+
+      <!-- 12 -->
+
+      <section
+        class="section"
+        id="rights"
+      >
+
+        <span class="section-number">
+          12
+        </span>
+
+        <h2>
+          Your Choices & Privacy Rights
+        </h2>
+
+        <p>
+          Depending on where you live and applicable law, you may have rights
+          regarding your personal information.
+        </p>
+
+        <p>
+          These may include:
+        </p>
+
+        <ul>
+
+          <li>
+            <strong>Access / Know:</strong>
+            Request access to personal information we hold about you.
+          </li>
+
+          <li>
+            <strong>Correction:</strong>
+            Ask us to correct inaccurate personal information.
+          </li>
+
+          <li>
+            <strong>Deletion:</strong>
+            Request deletion of personal information where applicable.
+          </li>
+
+          <li>
+            <strong>Portability:</strong>
+            Request a copy of personal information in circumstances where
+            applicable law provides this right.
+          </li>
+
+          <li>
+            <strong>Restriction:</strong>
+            Ask us to restrict or stop certain processing where applicable.
+          </li>
+
+          <li>
+            <strong>Withdrawal of Consent:</strong>
+            Where processing is based on consent, you may be able to withdraw
+            that consent.
+          </li>
+
+          <li>
+            <strong>Communication Preferences:</strong>
+            Opt out of promotional communications using the unsubscribe
+            option provided or by contacting us.
+          </li>
+
+        </ul>
+
+        <p>
+          These rights may not apply in every situation and may be subject to
+          applicable legal exceptions.
+        </p>
+
+        <p>
+          We may need to verify your identity before processing certain
+          privacy requests.
+        </p>
+
+        <p>
+          Where permitted by applicable law, you may also be able to appoint
+          an authorised person to make a request on your behalf.
+        </p>
+
+      </section>
+
+
+      <!-- 13 -->
+
+      <section
+        class="section"
+        id="children"
+      >
+
+        <span class="section-number">
+          13
+        </span>
+
+        <h2>
+          Children's Privacy
+        </h2>
+
+        <p>
+          PartsBaba.ai is intended for users who are able to independently
+          use the platform for sourcing and procurement purposes.
+        </p>
+
+        <p>
+          We do not knowingly seek to collect personal information from
+          children without appropriate consent where such consent is required
+          by applicable law.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information to us,
+          please contact our team so that we can review the situation.
+        </p>
+
+      </section>
+
+
+      <!-- 14 -->
+
+      <section
+        class="section"
+        id="third-party-sites"
+      >
+
+        <span class="section-number">
+          14
+        </span>
+
+        <h2>
+          Third-Party Websites & Services
+        </h2>
+
+        <p>
+          PartsBaba.ai may contain links to third-party websites, services or
+          platforms.
+        </p>
+
+        <p>
+          These third-party services operate independently and may have their
+          own privacy policies and practices.
+        </p>
+
+        <p>
+          PartsBaba is not responsible for the privacy or security practices
+          of websites or services operated by third parties.
+        </p>
+
+        <p>
+          We encourage you to review the relevant privacy policy and terms of
+          a third-party service before providing information to it.
+        </p>
+
+      </section>
+
+
+      <!-- 15 -->
+
+      <section
+        class="section"
+        id="international"
+      >
+
+        <span class="section-number">
+          15
+        </span>
+
+        <h2>
+          International Processing
+        </h2>
+
+        <p>
+          Some of our technology or service providers may process information
+          in countries other than India.
+        </p>
+
+        <p>
+          Where personal information is transferred, stored or processed
+          outside India or your country of residence, we aim to use
+          appropriate safeguards and handle the information in accordance with
+          applicable privacy requirements.
+        </p>
+
+        <div class="info-box orange">
+
+          <strong>
+            Transparency about service providers
+          </strong>
+
+          <p>
+            The locations in which information is processed can depend on the
+            technology and service providers used by PartsBaba.ai.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 16 -->
+
+      <section
+        class="section"
+        id="business"
+      >
+
+        <span class="section-number">
+          16
+        </span>
+
+        <h2>
+          Business Transfers
+        </h2>
+
+        <p>
+          As PartsBaba grows, there may be circumstances where the business,
+          certain assets or parts of its operations are reorganised,
+          transferred or acquired.
+        </p>
+
+        <p>
+          In such circumstances, information associated with the relevant
+          business operations may be transferred as part of the transaction,
+          subject to applicable law and appropriate protections.
+        </p>
+
+      </section>
+
+
+      <!-- 17 -->
+
+      <section
+        class="section"
+        id="changes"
+      >
+
+        <span class="section-number">
+          17
+        </span>
+
+        <h2>
+          Changes to This Privacy Policy
+        </h2>
+
+        <p>
+          As our platform and services develop, we may occasionally update
+          this Privacy Policy.
+        </p>
+
+        <p>
+          Updates may reflect changes to our services, technology, business
+          practices or applicable legal and regulatory requirements.
+        </p>
+
+        <p>
+          When we make changes, we will update the
+          <strong>"Last Updated"</strong>
+          date at the top of this page.
+        </p>
+
+        <p>
+          We encourage you to review this page periodically so you remain
+          informed about how PartsBaba handles information.
+        </p>
+
+      </section>
+
+
+      <!-- 18 -->
+
+      <section
+        class="section"
+        id="complaints"
+      >
+
+        <span class="section-number">
+          18
+        </span>
+
+        <h2>
+          Privacy Questions & Complaints
+        </h2>
+
+        <p>
+          We want you to feel comfortable raising any privacy-related
+          question or concern with us.
+        </p>
+
+        <p>
+          If you believe your information has been handled incorrectly, or if
+          you have a question about this Privacy Policy, you can contact our
+          team using the details below.
+        </p>
+
+        <p>
+          We will review your concern and work towards an appropriate
+          response in accordance with applicable requirements.
+        </p>
+
+        <div class="info-box green">
+
+          <strong>
+            We're happy to help.
+          </strong>
+
+          <p>
+            Privacy questions, requests and complaints can be sent to
+            care@partsbaba.com.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 19 -->
+
+      <section
+        class="section"
+        id="contact"
+      >
+
+        <span class="section-number">
+          19
+        </span>
+
+        <div class="contact-card">
+
+          <h2>
+            We're Here to Help
+          </h2>
+
+          <p>
+            If you have a question about this Privacy Policy, want to
+            understand how your information is being used, or would like to
+            make a privacy-related request, please contact us.
+          </p>
+
+
+          <div class="contact-grid">
+
+            <div class="contact-item">
+
+              <small>
+                Address
+              </small>
+
+              <span>
+                E-49/7, Pocket D, Okhla Phase II,<br />
+                Okhla Industrial Estate,<br />
+                New Delhi, Delhi – 110020, India
+              </span>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <small>
+                Email
+              </small>
+
+              <a href="mailto:care@partsbaba.com">
+                care@partsbaba.com
+              </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <small>
+                Phone
+              </small>
+
+              <a href="tel:+917303600605">
+                +91 73036 00605
+              </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <small>
+                Support Hours
+              </small>
+
+              <span>
+                Monday – Saturday<br />
+                10:00 AM – 6:00 PM
+              </span>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <small>
+                GSTIN
+              </small>
+
+              <span>
+                07AAPCP4972Q1ZC
+              </span>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <small>
+                CIN
+              </small>
+
+              <span>
+                U47410DL2025PTC443631
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- FINAL SUMMARY -->
+
+      <div class="info-box orange">
+
+        <strong>
+          Our approach to privacy
+        </strong>
+
+        <p>
+          In short, PartsBaba collects information that helps us understand
+          your requirements, source products, communicate with you, process
+          orders and improve our platform. We aim to handle your information
+          responsibly and use it for legitimate business and service-related
+          purposes.
+        </p>
+
+      </div>
+
+
+    </main>
+
+  </div>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+
+        <div class="footer-brand">
+
+          <img
+            class="footer-logo"
+            src="https://partsbaba.ai/static/media/PartsBABA_logo.c956a49373c9e9868bf7.png"
+            alt="PartsBaba"
+          />
+
+          <p>
+            The smarter way to source electronic parts, IT hardware and
+            specialised components — combining technology, sourcing expertise
+            and a trusted supplier network.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Explore
+          </h4>
+
+          <a href="https://partsbaba.ai/">
+            AI Search
+          </a>
+
+          <a href="https://partsbaba.ai/categories">
+            Categories
+          </a>
+
+          <a href="https://partsbaba.ai/#insights">
+            Insights
+          </a>
+
+          <a href="https://partsbaba.ai/#about">
+            About Us
+          </a>
+
+          <a href="https://partsbaba.ai/">
+            Request a Quote
+          </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>
+            Legal & Support
+          </h4>
+
+          <a href="#">
+            Privacy Policy
+          </a>
+
+          <!-- Replace with your final Terms & Conditions route -->
+          <a href="https://partsbaba.ai/">
+            Terms & Conditions
+          </a>
+
+          <a href="https://partsbaba.ai/#contact">
+            Contact Us
+          </a>
+
+          <a href="https://partsbaba.com/">
+            PartsBaba.com
+          </a>
+
+          <a href="mailto:care@partsbaba.com">
+            Email Support
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 PartsBaba. All rights reserved.
+        </div>
+
+        <div>
+          Simple. Transparent. Reliable.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
